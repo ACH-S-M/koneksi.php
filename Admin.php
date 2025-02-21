@@ -35,7 +35,19 @@ if (mysqli_num_rows($result) > 0) {
         table {
             border-collapse: collapse;
             border: 2px black solid;
+            width: 60%;
         }
+        @media only screen and (max-width:768px) {
+            table{
+                width: 100%;
+              
+            }
+            tr th {
+                background-color: red;
+            }
+        }
+
+
         tr th {
             background-color: blue;
             color: white;
